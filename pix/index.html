@@ -5,43 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
 <body>
     <div class="jumbotron">
         <div class="container d-flex justify-content-center align-items-center mt-5 mb-3">
-            <h1 class="display-6">Matrícula</h1>
+            <h1 class="display-6">Acesso do Aluno</h1>
         </div>
         <div class="container d-flex justify-content-center align-items-center mt-5 mb-3">
-            <span>Selecione as disciplinas do seu curso</span>
+            <span>Forma de pagamento escolhida:</span>
         </div>
-    </div>
-    <div class="container d-flex justify-content-center align-items-center mb-4">
-        <img src="" alt="" />
     </div>
     <div class="form-signin d-flex justify-content-center align-items-center h-75 m-3">
         <form method="post" class="shadow p-4 pe-5 ps-5 mb-5 rounded text-bg-light">
-            <div class="form-group row py-2">
-                <label for="login" class="col-sm-2 col-form-label">Login</label>
-                <div class="col-sm-10">
-                    <input type="email" class="form-control" id="login" placeholder="Login">
+                <div class="container d-flex justify-content-center align-items-center mt-1 mb-2">
+                    <h5>PIX</h5>
                 </div>
-            </div>
-            <div class="form-group row py-2">
-                <label for="senha" class="col-sm-2 col-form-label">Senha</label>
-                <div class="col-sm-10">
-                    <input type="password" class="form-control" id="senha" placeholder="Senha">
+                <div class="d-grid gap-2">
+                    <div class="col-sm-12 d-flex justify-content-center panel panel-default alert alert-danger">
+                        Taxa de Matrícula: R$ XXX,XX
+                    </div>
+                <button class="btn btn-secondary" type="button">Copiar chave PIX</button>
                 </div>
-            </div>
+                <div class="row g-3 pt-2">
+                    <div class="col-sm-12">
+                        <!-- <img src="/images/qrcode-pix.png" alt=""> -->
+                        <img alt="qrcode Gerado a partir dos dados fornecidos" class="mx-auto print:w-84" src="data:image/png;base64,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">
+                    </div>
+                </div>
             <div class="float-end py-4">
-                <button type="button" class="btn btn-primary" id="btn-entrar">PRÓXIMO</button>
-            </div>        </form>
+                <button type="button" class="btn btn-primary" id="btn-proximo">PRÓXIMO</button>
+            </div>
+        </form>
     </div>
-
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
-
 </html>
