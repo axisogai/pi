@@ -19,64 +19,95 @@
     </div>
     <div class="form-signin d-flex justify-content-center align-items-center h-75 m-3">
         <form method="post" class="shadow p-4 pe-5 ps-5 mb-5 rounded text-bg-light">
-            <div class="form-group row py-2">
-                <!-- <label for="login" class="col-sm-3 col-form-label">Nome</label> -->
-                <div class="col">
-                    <input type="email" class="form-control" id="nome" placeholder="Login">
+            <div class="shadow p-4 pe-5 ps-5 mb-5 rounded text-bg-light>">
+                <div class="container d-flex justify-content-center align-items-center mt-2 mb-2">
+                    <h5>Dados do Aluno</h5>
                 </div>
-            </div>
-            <div class="form-group row py-2">
-                <!-- <label for="senha" class="col-sm-3 col-form-label">Sobrenome</label> -->
+            <div class="row g-3 pt-2">
+                <div class="col-sm-6">
+                  <label for="nome" class="form-label">Nome</label>
+                  <input type="text" class="form-control" placeholder="nome">
+                </div>
+                <div class="col-sm-6">
+                    <label for="sobrenome" class="form-label">Sobrenome</label>
+                    <input type="text" class="form-control" placeholder="nome">
+                  </div>
+              </div>
+            <div class="row g-3 pt-2">
+                <div class="col-sm-6">
+                    <label for="cpf" class="form-label">CPF</label>
+                  <input type="text" class="form-control" placeholder="CPF">
+                </div>
+                <div class="col-sm-6">
+                    <label for="rg" class="form-label">RG</label>
+                  <input type="text" class="form-control" placeholder="RG">
+                </div>
+              </div>
+              <div class="row g-3 pt-2">
+                <div class="col-sm-6">
+                    <label for="cpf" class="form-label">Telefone</label>
+                  <input type="text" class="form-control" placeholder="CPF">
+                </div>
+                <div class="col-sm-6">
+                    <label for="rg" class="form-label">e-mail</label>
+                  <input type="text" class="form-control" placeholder="RG">
+                </div>
+              </div>
+              <div class="row g-3 pt-2">
+                <div class="col-sm-7">
+                    <label for="" class="form-label">Data de nascimento</label>
+                  <input type="text" class="form-control" placeholder="CPF">
+                </div>
+                <div class="col-sm-5">
+                    <label for="rg" class="form-label">Nacionalidade</label>
+                  <input type="text" class="form-control" placeholder="RG">
+                </div>
+              </div>
+              <div class="row g-3 pt-2">
+                <div class="col-sm-10">
+                    <label for="" class="form-label">Endereço</label>
+                  <input type="text" class="form-control" placeholder="CPF">
+                </div>
+                <div class="col-sm-2">
+                    <label for="rg" class="form-label">Nº</label>
+                  <input type="text" class="form-control" placeholder="RG">
+                </div>
+              </div>
+              <div class="row g-3 pt-2">
                 <div class="col-sm-9">
-                    <input type="password" class="form-control" id="sobrenome" placeholder="Senha">
+                    <label for="" class="form-label">Bairro</label>
+                  <input type="text" class="form-control" placeholder="CPF">
                 </div>
-            </div>
-            <div class="form-group row py-2">
-                <!-- <label for="senha" class="col-sm-3 col-form-label">CPF</label> -->
-                <div class="col-sm-9">
-                    <input type="password" class="form-control" id="cpf" placeholder="Senha">
+                <div class="col-sm-3">
+                    <label for="rg" class="form-label">CEP</label>
+                  <input type="text" class="form-control" placeholder="RG">
                 </div>
-            </div>
-            <div class="form-group row py-2">
-                <!-- <label for="senha" class="col-sm-3 col-form-label">RG</label> -->
-                <div class="col-sm-9">
-                    <input type="password" class="form-control" id="rg" placeholder="Senha">
+              </div>
+              <div class="row g-3 pt-2">
+                <div class="col-sm-10">
+                    <label for="" class="form-label">Cidade</label>
+                  <input type="text" class="form-control" placeholder="CPF">
                 </div>
-            </div>
-            <div class="form-group row py-2">
-                <!-- <label for="senha" class="col-sm-3 col-form-label">Data de Nascimento</label> -->
-                <div class="col-sm-9">
-                    <input type="password" class="form-control" id="data_nascimento" placeholder="Senha">
+                <div class="col-sm-2">
+                    <label for="rg" class="form-label">UF</label>
+                  <input type="text" class="form-control" placeholder="RG">
                 </div>
-            </div>
-            <div class="form-group row py-2">
-                <!-- <label for="senha" class="col-sm-3 col-form-label">Nacionalidade</label> -->
-                <div class="col-sm-9">
-                    <input type="password" class="form-control" id="nacionalidade" placeholder="Senha">
+              </div>
+              <div class="row g-3 pt-2">
+                <div class="col-sm-6">
+                    <label for="senha" class="form-label">Senha</label>
+                  <input type="password" class="form-control" id="senha">
                 </div>
-            </div>
-            <div class="form-group row py-2">
-                <!-- <label for="senha" class="col-sm-3 col-form-label">E-mail</label> -->
-                <div class="col-sm-9">
-                    <input type="password" class="form-control" id="email" placeholder="Senha">
+                <div class="col-sm-6">
+                    <label for="confirmacaoSenha" class="form-label">Confirmação de Senha</label>
+                  <input type="password" class="form-control" id="confirmacaoSenha">
                 </div>
-            </div>
-            <div class="form-group row py-2">
-                <!-- <label for="senha" class="col-sm-3 col-form-label">Telefone</label> -->
-                <div class="col-sm-9">
-                    <input type="password" class="form-control" id="telefone" placeholder="Senha">
-                </div>
-            </div>
-            <div class="form-group row py-2">
-                <!-- <label for="senha" class="col-sm-3 col-form-label">Celular</label> -->
-                <div class="col-sm-9">
-                    <input type="password" class="form-control" id="celular" placeholder="Senha">
-                </div>
-            </div>
+              </div>
+        </div>
             <div class=" float-end py-4">
-                <button type="button" class="btn btn-primary" id="btn-entrar">PRÓXIMO</button>
-            </div>     
-           </form>
+                <button type="button" class="btn btn-primary" id="btn-entrar">CADASTRAR</button>
+            </div>
+        </form>
     </div>
 
 </body>
