@@ -5,38 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
 <body>
     <div class="jumbotron">
         <div class="container d-flex justify-content-center align-items-center mt-5 mb-3">
-            <h1 class="display-6">Matrícula</h1>
+            <h1 class="display-6">Acesso do Aluno</h1>
         </div>
         <div class="container d-flex justify-content-center align-items-center mt-5 mb-3">
-            <span>Selecione as disciplinas do seu curso</span>
+            <span>Forma de pagamento escolhida:</span>
         </div>
-    </div>
-    <div class="container d-flex justify-content-center align-items-center mb-4">
-        <img src="" alt="" />
     </div>
     <div class="form-signin d-flex justify-content-center align-items-center h-75 m-3">
         <form method="post" class="shadow p-4 pe-5 ps-5 mb-5 rounded text-bg-light">
-            <div class="form-group row py-2">
-                <label for="login" class="col-sm-2 col-form-label">Login</label>
-                <div class="col-sm-10">
-                    <input type="email" class="form-control" id="login" placeholder="Login">
+               <div class="container d-flex justify-content-center align-items-center mt-1 mb-2">
+                    <h5>Cartão de Crédito</h5>
                 </div>
-            </div>
-            <div class="form-group row py-2">
-                <label for="senha" class="col-sm-2 col-form-label">Senha</label>
-                <div class="col-sm-10">
-                    <input type="password" class="form-control" id="senha" placeholder="Senha">
+                <div class="col-sm-12 d-flex justify-content-center panel panel-default alert alert-danger">
+                    Taxa de Matrícula: R$ XXX,XX
+               </div>
+            <div class="row g-3 pt-2">
+                <div class="col-sm-12">
+                  <label for="nome" class="form-label">Número do Cartão</label>
+                  <input type="text" class="form-control" placeholder="nome">
                 </div>
-            </div>
+              </div>
+              <div class="row g-3 pt-2">
+                <div class="col-sm-12">
+                  <label for="nome" class="form-label">NOme do Titular</label>
+                  <input type="text" class="form-control" placeholder="nome">
+                </div>
+              </div>
+              <div class="row g-3 pt-2">
+                <div class="col-sm-6">
+                    <label for="cpf" class="form-label">Validade</label>
+                  <input type="text" class="form-control" placeholder="CPF">
+                </div>
+                <div class="col-sm-6">
+                    <label for="rg" class="form-label">CVV</label>
+                  <input type="text" class="form-control" placeholder="RG">
+                </div>
+              </div>
             <div class="float-end py-4">
-                <button type="button" class="btn btn-primary" id="btn-entrar">PRÓXIMO</button>
-            </div>        </form>
+                <button type="button" class="btn btn-primary" id="btn-entrar">CADASTRAR</button>
+            </div>
+        </form>
     </div>
 
 </body>
